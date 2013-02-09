@@ -1,0 +1,388 @@
+/*
+Theme Name: Wacky Waxy!
+Description: Child theme for Sarah Waxman's professional website
+Author: Adam Gibbons for Biped Design
+Author URI: http://www.biped-design.com
+Version: 1.0
+Template: thematic
+*/
+
+/* -------------------------------------------------------------- 
+  
+   Reset default browser CSS.
+   
+   Based on work by Eric Meyer:
+   http://meyerweb.com/eric/tools/css/reset/index.html
+   
+-------------------------------------------------------------- */
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+    background:#fff;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img { border: none; }
+
+
+
+
+
+
+
+body {
+    min-width:940px;
+}
+#wrapper{
+  width:1020px;
+  margin:auto;
+}
+#header {
+    position:relative;
+}
+#branding {
+    width:940px;
+    margin:0 auto;
+}
+#access {
+    position:relative;
+    overflow:hidden;
+}
+.menu {
+    width:940px;
+    margin:0 auto;
+}
+#main {
+    width:940px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+}
+#container {
+    width:940px;
+    float:right;
+    margin: 0 0 0 -310px;
+}
+#content {
+    width:620px;
+    overflow:hidden;
+    margin: 0 0 0 320px;
+}
+.hentry {
+    width: auto;
+}
+.main-aside {
+    width:300px;
+    float:left;
+    position:relative;
+}
+#primary {
+    float:left;
+}
+#secondary {
+    clear:left;
+}
+#footer {    
+    clear:both;
+}
+#subsidiary {
+    width:940px;
+    margin:0 auto;
+    overflow:hidden;
+}
+#subsidiary .aside {
+    width:300px;
+    float:left;
+    margin:0 20px 0 0;
+}
+#subsidiary #third {
+    margin:0;
+}
+#siteinfo {
+    clear:both;
+    width:940px;
+    margin:0 auto;
+}
+
+/* =Page Templates
+-------------------------------------------------------------- */
+
+/*
+    Full Width Template
+*/
+
+.page-template-template-page-fullwidth-php #container {
+  margin:0;
+  width:940px;
+}
+
+.page-template-template-page-fullwidth-php #content {
+  margin: 0 0 0 10px;
+  width:940px;
+}
+
+.page-template-template-page-fullwidth-php #comments {
+    width:540px;
+}
+
+/* end boilerplate */
+
+/* begin waxman custom overrides */
+
+body{
+  background-color:#363339;
+}
+
+#wrapper{
+  margin-bottom:20px;
+}
+
+
+#header{
+
+  padding:15px 0;  
+  width:1060px;
+  margin-left:-20px;
+  margin-bottom:20px;
+
+  color:white;
+  background-color:#2E516E;
+
+  border-bottom-right-radius:5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-left-radius:5px;
+  -moz-border-radius-bottomleft: 5px;
+
+  text-align: right;
+}
+
+#header a{
+  color:white;
+  text-decoration: none;
+}
+
+#main, #container{
+  width:100%;
+}
+
+#container{
+  background-color: #EDEDED;
+  width: 640px;
+  padding:20px;
+
+  border-radius:5px;
+  -moz-border-radius: 5px;
+}
+
+#content{
+  margin:0;
+  width:auto;
+}
+
+#primary{
+  width:310px;
+  color:white;
+  text-align: center;
+}
+
+ul#menu-primary-navigation-1{
+  width:100%;
+  background-color: transparent;
+}
+
+ul#menu-primary-navigation-1 a{
+  color:white;
+  text-decoration: none;
+  display: block;
+  padding:25px 0;
+}
+
+ul#menu-primary-navigation-1 a:hover{
+  background-color:#8B7399;
+}
+
+.current_page_item a{
+ background-color:#8B7399; 
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a, blockquote{
+  font-family:'trebuchet ms', arial;
+  line-height:1.4em;
+}
+
+p{
+  font-size:16px;
+}
+#content h1, 
+#content h2, 
+#content h3, 
+#content h4, 
+#content h5, 
+#content h6, 
+#content p, 
+#content ul, 
+#content li, 
+#content a, 
+#content blockquote{
+  color:#52111D;
+}
+
+.entry-title{
+  font-size:2em;
+  color: #52111D;
+}
+
+
+#access, #footer{
+  display:none;
+}
+
+.home #container {
+  background: url(images/sarah-waxman.jpg) no-repeat;
+  height: 600px;
+}
+
+#content h2{
+  font-size: 1.3em;
+}
+
+#content h3{
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#content h3 + p{
+  margin-top: 0;
+}
+
+#content p,
+#content ul,
+#content ol,
+#content blockquote{
+  margin:1.5em 0;
+}
+
+#content ul{
+  list-style-type:circle;
+  margin-left:0;
+  padding-left:1.5em;
+}
+
+#content ol{
+  list-style-type: decimal;
+  margin-left:0;
+  padding-left:1.5em;
+}
+
+#content li{
+  margin:.5em 0;
+}
+
+#content a{
+  color: #C43328;
+}
+
+#content a:hover{
+  text-decoration: none;
+}
+
+#menu-primary-navigation-1 li{
+  background-color: #A48DB3;
+}
+
+#menu-primary-navigation-1 li:first-child{
+  height: 100px;
+  background: url(images/henry1.png) no-repeat center #A48DB3;
+
+  border-top-right-radius:5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius:5px;
+  -moz-border-radius-topleft: 5px;
+}
+
+#menu-primary-navigation-1 li:last-child{
+  height: 100px;
+  background: url(images/henry2.png) no-repeat center #A48DB3;
+
+  border-bottom-right-radius:5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-left-radius:5px;
+  -moz-border-radius-bottomleft: 5px;
+}
+
+#menu-primary-navigation-1 li:first-child a,
+#menu-primary-navigation-1 li:last-child a{
+  display:none;
+}
+
+blockquote{
+  font-style: italic;
+}
+
+.home .entry-title{
+  display:none;
+}
+
+#sarah-waxman-logo{
+  width: 340px;
+}
+
+.home #huxley-quote{
+  margin-top:211px;
+  width: 390px;
+  margin-left:20px;
+}
+
+.entry-meta,
+.entry-utility{
+  font-family:arial;
+  color:#333;
+}
